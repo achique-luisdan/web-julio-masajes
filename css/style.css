@@ -18,6 +18,8 @@ section#services {
   padding: 2%;
   padding-left: 3%;
   padding-right: 3%;
+  width: 100%;
+  overflow: hidden;
 }
 
 section > h2{
@@ -25,18 +27,17 @@ section > h2{
   padding-bottom: 2%;
   font-size: 40px;
   color: var(--primary);
+
 }
 
 article > header > ul.container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 100%;
+  gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   margin-bottom: 3%;
-}
-
-article > header > ul.container  {
   list-style: none;
   border: solid 1px var(--surface);
+  width: 100%;
 }
 
 article > header > ul.container > li.item {
@@ -63,7 +64,7 @@ article > header > ul.container > li.item > button:hover > img {
 }
 
 article > header > ul.container > li.item > button:hover + div.triangle {
-  left: 40%;
+  left: 45%;
   width: 0;
   height: 0;
   bottom: -22%;
@@ -71,10 +72,12 @@ article > header > ul.container > li.item > button:hover + div.triangle {
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   position: absolute;
+  z-index: 2;
 }
 
 article > header > ul.container > li.item > button > img{
-  height: 90px;
+  max-height: 90px;
+  max-height: 30px;
 }
 
 article > header > ul.container > li.item > button > h3 {
@@ -82,15 +85,21 @@ article > header > ul.container > li.item > button > h3 {
   padding-top: 4%;
   padding-bottom: 4%;
   font-size: 20px;
+  /* white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; */
 }
 
 article > div.content {
   display: grid;
-  grid-template-columns: minmax(15rem, 1fr) minmax(15rem, 3fr)
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 20px;
+  overflow: hidden;
 }
 
 article > div.content aside {
   border: solid 1px var(--surface);
+  grid-area: 1;
 }
 
 article > div.content aside ul {
@@ -124,6 +133,7 @@ article > div.content aside ul > li:hover div.triangle {
 article > div.content > article {
   display: grid;
   padding-left: 3%;
+
 }
 
 
