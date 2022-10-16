@@ -209,6 +209,7 @@ article > div.content > article  > div.container > div:nth-child(1){
   padding-left: 30px;
   background-color: #029fc6db;
   font-size: 18px;
+  overflow-x: auto;
 }
 
 article > div.content > article  > div.container > div:nth-child(1) > h5 {
