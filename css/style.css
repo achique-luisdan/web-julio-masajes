@@ -120,8 +120,8 @@ article > div.content aside ul > li:hover{
 }
 
 article > div.content aside ul > li:hover div.triangle {
-  right: -5.5%;
-  top: 10%;
+  right: -3%;
+  top: 14%;
   width: 0;
   height: 0;
   border-top: 14px solid transparent;
@@ -164,6 +164,7 @@ article > div.content > article > header > a > div.triangle {
   border-bottom: 18px solid transparent;
   position: absolute;
 }
+
 
 article > div.content > article > header > a > small {
   display: inline-block;
