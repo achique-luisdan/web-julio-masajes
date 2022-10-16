@@ -30,6 +30,8 @@ section > h2 {
   color: var(--primary);
 }
 
+/** START CATEGORIES BAR **/
+
 article > header > ul.container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -40,11 +42,11 @@ article > header > ul.container {
   width: 100%;
 }
 
-article > header > ul.container > li.item {
+article > header > ul.container > li.category {
   position: relative;
 }
 
-article > header > ul.container > li.item > button {
+article > header > ul.container > li.category > button {
   width: 100%;
   height: 100%;
   padding: 3%;
@@ -53,16 +55,27 @@ article > header > ul.container > li.item > button {
   color: var(--primary);
 }
 
-article > header > ul.container > li.item > button:hover {
+article > header > ul.container > li.category > button:hover {
   background: var(--primary);
   color: var(--white);
 }
 
-article > header > ul.container > li.item > button:hover > img {
+article > header > ul.container > li.category > button:hover > img {
   filter: brightness(0) invert(100%);
 }
 
-article > header > ul.container > li.item > button:hover + div.triangle {
+/* Start Active Category */
+
+article > header > ul.container > li.category.active-category > button {
+  background: var(--primary);
+  color: var(--white);
+}
+
+article > header > ul.container > li.category.active-category > button > img {
+  filter: brightness(0) invert(100%);
+}
+
+article > header > ul.container > li.category.active-category > button + div.triangle {
   left: 42%;
   width: 0;
   height: 0;
@@ -74,17 +87,21 @@ article > header > ul.container > li.item > button:hover + div.triangle {
   z-index: 2;
 }
 
-article > header > ul.container > li.item > button > img{
+/* End Active Category */
+
+article > header > ul.container > li.category > button > img{
   max-height: 60px;
   min-height: 30px;
 }
 
-article > header > ul.container > li.item > button > h3 {
+article > header > ul.container > li.category > button > h3 {
   margin: 0px;
   padding-top: 3%;
   padding-bottom: 3%;
   font-size: 20px;
 }
+
+/** END CATEGORIES BAR **/
 
 article > div.content {
   display: grid;
@@ -120,7 +137,12 @@ article > div.content aside ul > li:hover{
   color: var(--white);
 }
 
-article > div.content aside ul > li:hover div.triangle {
+article > div.content aside ul > li.active-service{
+  background: var(--primary);
+  color: var(--white);
+}
+
+article > div.content aside ul > li.active-service div.triangle {
   right: -12px;
   top: 14%;
   width: 0;
@@ -131,9 +153,11 @@ article > div.content aside ul > li:hover div.triangle {
   position: absolute;
 }
 
+
+
 article > div.content > article > header{
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 2fr;
 }
 
 article > div.content > article > header > a{
@@ -179,6 +203,7 @@ article > div.content > article > header  > h4 {
 article > div.content > article >  h3 {
   color: var(--on-surface);
   font-size: 36px;
+  padding-bottom: 1%;
 }
 
 article > div.content > article  > div.container {
@@ -237,4 +262,19 @@ article > div.content > article  > div.container > div:nth-child(3) > img {
   article > div.content > article {
     grid-area: 2;
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:  #0c0c0c4d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 10px;
+  border: 10px;
 }

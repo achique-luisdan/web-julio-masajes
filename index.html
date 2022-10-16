@@ -18,29 +18,29 @@
       <article>
         <header>
           <ul class="container">
-            <li class="item">
-              <button>
+            <li class="category">
+              <button onclick="selectCategory(1)">
                 <img src="./images/icon-relaxing.svg" alt="Icono Masajes Relajantes">
                 <h3>RELAJANTES</h3>
               </button>
               <div class="triangle"></div>
             </li>
-            <li class="item">
-              <button>
+            <li class="category">
+              <button onclick="selectCategory(2)">
                 <img src="./images/icon-decontracting.svg" alt="Icono Masajes Descontracturantes">
                 <h3>DESCONTRACTURAR</h3>
               </button>
               <div class="triangle"></div>
             </li>
-            <li class="item">
-              <button>
+            <li class="category">
+              <button onclick="selectCategory(3)">
                 <img src="./images/icon-lymphatic-drainage.svg" alt="Icono Masajes Descontracturantes">
                 <h3>DRENAJE LINFÁTICO</h3>
               </button>
               <div class="triangle"></div>
             </li>
-            <li class="item">
-              <button>
+            <li class="category">
+              <button onclick="selectCategory(4)">
                 <img src="./images/icon-foot-reflexology.svg" alt="Icono Masajes Descontracturantes">
                 <h3>REFLEXOLOGÍA PODAL</h3>
               </button>
@@ -51,25 +51,41 @@
         <div class="content">
           <aside>
             <ul>
-              <li>
+              <li class="service" onclick="selectInformation(1)">
                 40 Min
                 <div class="triangle"></div>
               </li>
-              <li>
+              <li class="service" onclick="selectInformation(2)">
                 1 Hora
                 <div class="triangle"></div>
               </li>
-              <li>
+              <li class="service" onclick="selectInformation(3)">
                 1 Hora 30 Min
                 <div class="triangle"></div>
               </li>
-              <li>
+              <li class="service" onclick="selectInformation(4)">
                 2 Personas | 1 Hora c/u
+                <div class="triangle"></div>
+              </li>
+              <li class="service" onclick="selectInformation(5)">
+                1 Hora 20 Min
+                <div class="triangle"></div>
+              </li>
+              <li class="service" onclick="selectInformation(6)">
+                1 Hora 40 Min
+                <div class="triangle"></div>
+              </li>
+              <li class="service" onclick="selectInformation(7)">
+                1 Hora
+                <div class="triangle"></div>
+              </li>
+              <li class="service" onclick="selectInformation(8)">
+                40 Min
                 <div class="triangle"></div>
               </li>
             </ul>
           </aside>
-          <article>
+          <article class="information">
             <header>
               <h4>10$ USD</h4>
               <h4>40 Min</h4>
@@ -101,10 +117,242 @@
               </div>
             </div>
           </article>
+          <article class="information">
+            <header>
+              <h4>15$ USD</h4>
+              <h4>1 Hora</h4>
+              <a href="#">
+                <div class="triangle"></div>
+                <small>¡AGENDAR CITA!</small>
+                <img src="./images/icon-whatsapp.svg" alt="Logo de WhatsApp">
+              </a>
+            </header>
+            <h3>Masaje Relajante</h3>
+            <div class="container">
+              <div class="item">
+                <h5>Incluye</h5>
+                <ul>
+                  <li>Relajante de piernas anterior y posterior</li>
+                  <li>Relajante de espalda</li>
+                  <li>Pequeño Drenaje en el abdomen</li>
+                  <li>Relajante de brazos</li>
+                  <li>Drenaje facial</li>
+                  <li>Relajante de pies</li>
+                </ul>
+              </div>
+              <div class="item">
+                <img src="./images/icon-materials.svg" alt="Icono de Materiales"></a>
+                <h5>Materiales</h5>
+                <p>Aceite de coco,aceite de bebé, vaselina, bambú y masajeador eléctrico</p>
+              </div>
+              <div>
+                <img src="./images/pho-relaxing-1.jpg" alt="Foto de Masaje de Relajante">
+              </div>
+            </div>
+          </article>
+          <article class="information">
+            <header>
+              <h4>20$ USD</h4>
+              <h4>1 Hora 30 Min</h4>
+              <a href="#">
+                <div class="triangle"></div>
+                <small>¡AGENDAR CITA!</small>
+                <img src="./images/icon-whatsapp.svg" alt="Logo de WhatsApp">
+              </a>
+            </header>
+            <h3>Masaje Relajante</h3>
+            <div class="container">
+              <div class="item">
+                <h5>Incluye</h5>
+                <ul>
+                  <li>Relajante de piernas anterior y posterior</li>
+                  <li>Relajante de espalda</li>
+                  <li>Pequeño drenaje en el abdomen</li>
+                  <li>Relajante de brazos</li>
+                  <li>Relajante de pies</li>
+                </ul>
+              </div>
+              <div class="item">
+                <img src="./images/icon-materials.svg" alt="Icono de Materiales"></a>
+                <h5>Materiales</h5>
+                <p>Aceite de coco, vaselina, bambú y masajeador eléctrico</p>
+              </div>
+              <div>
+                <img src="./images/pho-relaxing-1.jpg" alt="Foto de Masaje de Relajante">
+              </div>
+            </div>
+          </article>
+          <article class="information">
+            <header>
+              <h4>20$ USD</h4>
+              <h4>2 Personas | 1 Hora c/u </h4>
+              <a href="#">
+                <div class="triangle"></div>
+                <small>¡AGENDAR CITA!</small>
+                <img src="./images/icon-whatsapp.svg" alt="Logo de WhatsApp">
+              </a>
+            </header>
+            <h3>Masaje Relajante</h3>
+            <div class="container">
+              <div class="item">
+                <h5>Incluye</h5>
+                <ul>
+                  <li>Relajante de piernas anterior y posterior</li>
+                  <li>Relajante de espalda</li>
+                  <li>Pequeño drenaje en el abdomen</li>
+                  <li>Relajante de brazos</li>
+                  <li>Relajante de pies</li>
+                </ul>
+              </div>
+              <div class="item">
+                <img src="./images/icon-materials.svg" alt="Icono de Materiales"></a>
+                <h5>Materiales</h5>
+                <p>Aceite de coco, vaselina, bambú y masajeador eléctrico</p>
+              </div>
+              <div>
+                <img src="./images/pho-relaxing-1.jpg" alt="Foto de Masaje de Relajante">
+              </div>
+            </div>
+          </article>
+          <article class="information">
+            <header>
+              <h4>20$ USD</h4>
+              <h4>1 Hora 20 Min</h4>
+              <a href="#">
+                <div class="triangle"></div>
+                <small>¡AGENDAR CITA!</small>
+                <img src="./images/icon-whatsapp.svg" alt="Logo de WhatsApp">
+              </a>
+            </header>
+            <h3>Masaje Descontracturante</h3>
+            <div class="container">
+              <div class="item">
+                <h5>Incluye</h5>
+                <ul>
+                  <li>Relajante de piernas anterior y posterior</li>
+                  <li>Relajante de espalda</li>
+                  <li>Descontracturante de espalda</li>
+                  <li>Pequeño Drenaje en el abdomen</li>
+                  <li>Relajante de brazos</li>
+                  <li>Drenaje facial</li>
+                  <li>Relajante de pies</li>
+                  <li>Estiramiento de piernas, brazos y cuello</li>
+                </ul>
+              </div>
+              <div class="item">
+                <img src="./images/icon-materials.svg" alt="Icono de Materiales"></a>
+                <h5>Materiales</h5>
+                <p>Aceite de coco, aceite de bebé,  vaselina, bambú y masajeador eléctrico</p>
+              </div>
+              <div>
+                <img src="./images/pho-decontracting-1.jpg" alt="Foto de Masaje de Relajante">
+              </div>
+            </div>
+          </article>
+          <article class="information">
+            <header>
+              <h4>25$ USD</h4>
+              <h4>1 Hora 40 Min</h4>
+              <a href="#">
+                <div class="triangle"></div>
+                <small>¡AGENDAR CITA!</small>
+                <img src="./images/icon-whatsapp.svg" alt="Logo de WhatsApp">
+              </a>
+            </header>
+            <h3>Masaje Descontracturante</h3>
+            <div class="container">
+              <div class="item">
+                <h5>Incluye</h5>
+                <ul>
+                  <li>Relajante de piernas anterior y posterior</li>
+                  <li>Relajante de espalda.</li>
+                  <li>Descontracturante de espalda.</li>
+                  <li>Ventosaterapia.</li>
+                  <li>Ajustes quiroprácticos</li>
+                  <li>Pequeño Drenaje en el abdomen</li>
+                  <li>Relajante de brazos</li>
+                  <li>Drenaje facial</li>
+                  <li>Relajante de pies</li>
+                  <li>Estiramiento de piernas, brazos y cuello</li>
+                </ul>
+              </div>
+              <div class="item">
+                <img src="./images/icon-materials.svg" alt="Icono de Materiales"></a>
+                <h5>Materiales</h5>
+                <p>Aceite de coco, aceite de bebé vaselina, mascarilla hidratante, bambú y masajeador eléctrico</p>
+              </div>
+              <div>
+                <img src="./images/pho-decontracting-1.jpg" alt="Foto de Masaje de Relajante">
+              </div>
+            </div>
+          </article>
+          <article class="information">
+            <header>
+              <h4>15$ USD</h4>
+              <h4>1 Hora</h4>
+              <a href="#">
+                <div class="triangle"></div>
+                <small>¡AGENDAR CITA!</small>
+                <img src="./images/icon-whatsapp.svg" alt="Logo de WhatsApp">
+              </a>
+            </header>
+            <h3>Drenaje Linfático</h3>
+            <div class="container">
+              <div class="item">
+                <h5>Incluye</h5>
+                <ul>
+                  <li>Drenaje en piernas anterior y posterior</li>
+                  <li>Drenaje en el abdomen</li>
+                  <li>Drenaje en los brazos</li>
+                  <li>Drenaje facial</li>
+                  <li>Drenaje en la espalda</li>
+                  <li>Relajante de pies</li>
+                </ul>
+              </div>
+              <div class="item">
+                <img src="./images/icon-materials.svg" alt="Icono de Materiales"></a>
+                <h5>Materiales</h5>
+                <p>Aceite de coco, aceite de bebé, vaselina, bambú y masajeador eléctrico</p>
+              </div>
+              <div>
+                <img src="./images/pho-lymphatic-drainage-1.jpg" alt="Foto de Masaje de Relajante">
+              </div>
+            </div>
+          </article>
+          <article class="information">
+            <header>
+              <h4>10$ USD</h4>
+              <h4>40 Min</h4>
+              <a href="#">
+                <div class="triangle"></div>
+                <small>¡AGENDAR CITA!</small>
+                <img src="./images/icon-whatsapp.svg" alt="Logo de WhatsApp">
+              </a>
+            </header>
+            <h3>Reflexología Podal</h3>
+            <div class="container">
+              <div class="item">
+                <h5>Incluye</h5>
+                <ul>
+                  <li>Reflexología en los pies</li>
+                  <li>Drenaje linfático de piernas</li>
+                </ul>
+              </div>
+              <div class="item">
+                <img src="./images/icon-materials.svg" alt="Icono de Materiales"></a>
+                <h5>Materiales</h5>
+                <p>Aceite de coco, vaselina, bambú y masajeador eléctrico</p>
+              </div>
+              <div>
+                <img src="./images/pho-foot-reflexology-1.jpg" alt="Foto de Masaje de Relajante">
+              </div>
+            </div>
+          </article>
         </div>
       </article>
     </section>
   </main>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
