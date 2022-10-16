@@ -1,0 +1,227 @@
+:root {
+  --primary: #02a0c6;
+  --secondary: #aceffd;
+  --surface: #c6c6c6;
+  --on-surface: #7e7e7e;
+  --black: #1a1a1a;
+  --white: #ffffff;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+section#services {
+  padding: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+section > h2{
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: 40px;
+  color: var(--primary);
+}
+
+article > header > ul.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+article > header > ul.container  {
+  list-style: none;
+  border: solid 1px var(--surface);
+}
+
+article > header > ul.container > li.item {
+  position: relative;
+}
+
+article > header > ul.container > li.item > button {
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+  background: var(--secondary);
+  border-radius: 0px;
+  border: none;
+  color: var(--primary);
+}
+
+article > header > ul.container > li.item > button:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+article > header > ul.container > li.item > button:hover > img {
+  filter: brightness(0) invert(100%);
+}
+
+article > header > ul.container > li.item > button:hover + div.triangle {
+  left: 40%;
+  width: 0;
+  height: 0;
+  bottom: -22%;
+  border-top: 30px solid  var(--primary);
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+}
+
+article > header > ul.container > li.item > button > img{
+  height: 90px;
+}
+
+article > header > ul.container > li.item > button > h3 {
+  margin: 0px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-size: 20px;
+}
+
+article > div.content {
+  display: grid;
+  grid-template-columns: minmax(15rem, 1fr) minmax(15rem, 3fr)
+}
+
+article > div.content aside {
+  border: solid 1px var(--surface);
+}
+
+article > div.content aside ul {
+  list-style: none;
+  font-weight: bold;
+  color: var(--on-surface);
+}
+
+article > div.content aside ul > li {
+  position: relative;
+  padding: 3%;
+  border-bottom: solid 1px var(--surface);
+}
+
+article > div.content aside ul > li:hover{
+  background: var(--primary);
+  color: var(--white);
+}
+
+article > div.content aside ul > li:hover div.triangle {
+  right: -5.5%;
+  top: 10%;
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-left: 14px solid  var(--primary);
+  border-bottom: 14px solid transparent;
+  position: absolute;
+}
+
+article > div.content > article {
+  display: grid;
+  padding-left: 3%;
+}
+
+
+article > div.content > article > header{
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+}
+
+
+article > div.content > article > header > a{
+  background: var(--primary);
+  gap: 100px;
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1%;
+  text-align: center;
+  position: relative;
+}
+
+article > div.content > article > header > a > div.triangle {
+  left: -4%;
+  top: 10%;
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-right: 18px solid  var(--primary);
+  border-bottom: 18px solid transparent;
+  position: absolute;
+}
+
+article > div.content > article > header > a > small {
+  display: inline-block;
+  vertical-align: super;
+  font-size: 20px;
+  padding-right: 2% ;
+}
+
+article > div.content > article > header > a > img {
+  height:  30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+article > div.content > article > header  > h4 {
+  color: var(--primary);
+  font-size: 32px;
+}
+
+article > div.content > article >  h3 {
+  color: var(--on-surface);
+  font-size: 36px;
+}
+
+article > div.content > article  > div.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+  height: 400px;
+}
+
+article > div.content > article  > div.container > div.item{
+  z-index: 2;
+  color: var(--black);
+}
+
+article > div.content > article  > div.container > div:nth-child(1){
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  margin-top: 40px;
+  padding: 2%;
+  padding-left: 30px;
+  background-color: #029fc6db;
+  font-size: 18px;
+}
+
+article > div.content > article  > div.container > div:nth-child(1) > h5 {
+  font-size: 22px;
+  padding-bottom: 1%
+}
+
+article > div.content > article  > div.container > div:nth-child(2){
+  grid-column: 3 / 4;
+  grid-row: 3;
+  margin-top: 10px;
+}
+
+article > div.content > article  > div.container > div:nth-child(3){
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-self: flex-start;
+  z-index: 1
+}
+
+article > div.content > article  > div.container > div:nth-child(3) > img {
+  width: 65%;
+  height: 100%;
+  object-fit: cover;
+}
