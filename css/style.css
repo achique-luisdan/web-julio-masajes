@@ -94,7 +94,6 @@ article > div.content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 20px;
-  overflow: hidden;
 }
 
 article > div.content aside {
