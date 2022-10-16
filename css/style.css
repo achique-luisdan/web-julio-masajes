@@ -133,7 +133,7 @@ article > div.content aside ul > li:hover div.triangle {
 article > div.content > article {
   display: grid;
   padding-left: 3%;
-
+  gap: 10px;
 }
 
 
