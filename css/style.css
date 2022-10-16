@@ -22,52 +22,64 @@ section#services {
   overflow: hidden;
 }
 
-section > h2{
+section > h2 {
+  padding-top: 1%;
+  padding-bottom: 1%;
   text-align: center;
-  padding-bottom: 2%;
   font-size: 40px;
   color: var(--primary);
-
 }
+
+/** START CATEGORIES BAR **/
 
 article > header > ul.container {
   display: grid;
-  gap: 1px;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1px;
   margin-bottom: 3%;
   list-style: none;
   border: solid 1px var(--surface);
   width: 100%;
 }
 
-article > header > ul.container > li.item {
+article > header > ul.container > li.category {
   position: relative;
 }
 
-article > header > ul.container > li.item > button {
+article > header > ul.container > li.category > button {
   width: 100%;
   height: 100%;
   padding: 3%;
-  background: var(--secondary);
-  border-radius: 0px;
   border: none;
+  background: var(--secondary);
   color: var(--primary);
 }
 
-article > header > ul.container > li.item > button:hover {
+article > header > ul.container > li.category > button:hover {
   background: var(--primary);
   color: var(--white);
 }
 
-article > header > ul.container > li.item > button:hover > img {
+article > header > ul.container > li.category > button:hover > img {
   filter: brightness(0) invert(100%);
 }
 
-article > header > ul.container > li.item > button:hover + div.triangle {
-  left: 45%;
+/* Start Active Category */
+
+article > header > ul.container > li.category.active-category > button {
+  background: var(--primary);
+  color: var(--white);
+}
+
+article > header > ul.container > li.category.active-category > button > img {
+  filter: brightness(0) invert(100%);
+}
+
+article > header > ul.container > li.category.active-category > button + div.triangle {
+  left: 42%;
   width: 0;
   height: 0;
-  bottom: -22%;
+  bottom: -28px;
   border-top: 30px solid  var(--primary);
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
@@ -75,30 +87,37 @@ article > header > ul.container > li.item > button:hover + div.triangle {
   z-index: 2;
 }
 
-article > header > ul.container > li.item > button > img{
-  max-height: 90px;
-  max-height: 30px;
+/* End Active Category */
+
+article > header > ul.container > li.category > button > img{
+  max-height: 60px;
+  min-height: 30px;
 }
 
-article > header > ul.container > li.item > button > h3 {
+article > header > ul.container > li.category > button > h3 {
   margin: 0px;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   font-size: 20px;
-  /* white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden; */
 }
+
+/** END CATEGORIES BAR **/
 
 article > div.content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 20px;
+  row-gap: 30px;
 }
 
 article > div.content aside {
   border: solid 1px var(--surface);
-  grid-area: 1;
+}
+
+article > div.content > article {
+  display: grid;
+  grid-area: 1 / 2 / 2 / 6;
+  gap: 10px;
+  padding-left: 3%;
 }
 
 article > div.content aside ul {
@@ -118,8 +137,13 @@ article > div.content aside ul > li:hover{
   color: var(--white);
 }
 
-article > div.content aside ul > li:hover div.triangle {
-  right: -3%;
+article > div.content aside ul > li.active-service{
+  background: var(--primary);
+  color: var(--white);
+}
+
+article > div.content aside ul > li.active-service div.triangle {
+  right: -12px;
   top: 14%;
   width: 0;
   height: 0;
@@ -129,18 +153,12 @@ article > div.content aside ul > li:hover div.triangle {
   position: absolute;
 }
 
-article > div.content > article {
-  display: grid;
-  padding-left: 3%;
-  gap: 10px;
-}
 
 
 article > div.content > article > header{
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 2fr;
 }
-
 
 article > div.content > article > header > a{
   background: var(--primary);
@@ -154,8 +172,8 @@ article > div.content > article > header > a{
 }
 
 article > div.content > article > header > a > div.triangle {
-  left: -4%;
-  top: 10%;
+  left: -16px;
+  top: 12%;
   width: 0;
   height: 0;
   border-top: 18px solid transparent;
@@ -163,7 +181,6 @@ article > div.content > article > header > a > div.triangle {
   border-bottom: 18px solid transparent;
   position: absolute;
 }
-
 
 article > div.content > article > header > a > small {
   display: inline-block;
@@ -186,6 +203,7 @@ article > div.content > article > header  > h4 {
 article > div.content > article >  h3 {
   color: var(--on-surface);
   font-size: 36px;
+  padding-bottom: 1%;
 }
 
 article > div.content > article  > div.container {
@@ -221,6 +239,7 @@ article > div.content > article  > div.container > div:nth-child(2){
   grid-column: 3 / 4;
   grid-row: 3;
   margin-top: 10px;
+  margin-left: 15px;
 }
 
 article > div.content > article  > div.container > div:nth-child(3){
@@ -235,4 +254,27 @@ article > div.content > article  > div.container > div:nth-child(3) > img {
   width: 65%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Media Queries */
+
+@media screen  and (max-width: 640px){
+  article > div.content > article {
+    grid-area: 2;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:  #0c0c0c4d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 10px;
+  border: 10px;
 }
