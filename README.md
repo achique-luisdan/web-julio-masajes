@@ -4,7 +4,7 @@
 
 Landing Page de Julio Masajes, presenta sus servicios de masajes separados por categorías, duración y precios.
 
-## Características(Features) ❤️
+## Características (Features) ❤️
 
 * Muestra de forma dinámica servicios agrupados por categorías: Relajantes, Descontracturantes, Drenajes Linfáticos, Reflexología Podal.
 
