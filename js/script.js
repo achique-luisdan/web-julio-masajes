@@ -59,11 +59,13 @@ function showInformation(){
   let informations = document.getElementsByClassName('information')
   let services = document.getElementsByClassName('service')
   for (let i = 0; i < informations.length; i++) {
-    informations[i].style.display = 'none';
+    informations[i].style.visibility = 'hidden';
+    informations[i].className = informations[i].className.replace("show", "");
     services[i].className = services[i].className.replace("active-service", "");
     if (i === service -1){
-      informations[i].style.display ='block';
+      informations[i].style.visibility ='visible';
       services[i].className += " active-service";
+      informations[i].className += " show";
     }
   }
 }
