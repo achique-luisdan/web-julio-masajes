@@ -422,6 +422,9 @@ hr {
 
 @media screen  and (max-width: 640px){
   article > div.content > article {
+    display: none;
+  }
+  article > div.content > article {
     grid-area: 2;
   }
   nav ul {
