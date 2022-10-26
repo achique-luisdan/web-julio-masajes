@@ -427,8 +427,7 @@ hr {
   article > div.content > article {
     grid-area: 2;
   }
-  nav ul {
-    display: flex;
-    flex-direction:column;
+  nav ul > li:nth-child(odd) {
+    display: none;
   }
 }
