@@ -1,5 +1,8 @@
 # Web Julio Masajes
 
+<img src="./SCREEN_1.png" alt="Sección de Servicio" height="350px">
+
+
 ## Descripción (Description) 📋
 
 Landing Page de Julio Masajes, presenta sus servicios de masajes separados por categorías, duración y precios.
