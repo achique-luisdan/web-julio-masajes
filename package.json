@@ -1,0 +1,30 @@
+{
+  "name": "web-julio-masajes",
+  "version": "1.0.0",
+  "description": "Julio Masajes conoce mis servicios de masajes y agenda ahora mismo.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achique-luisdan/web-julio-masajes.git"
+  },
+  "keywords": [
+    "julio",
+    "masajes",
+    "masajes",
+    "relajantes",
+    "masajes",
+    "descontracturantes"
+  ],
+  "author": "achique-luisdan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/achique-luisdan/web-julio-masajes/issues"
+  },
+  "homepage": "https://github.com/achique-luisdan/web-julio-masajes#readme",
+  "dependencies": {
+    "firebase-tools": "^11.15.0"
+  }
+}

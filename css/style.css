@@ -166,20 +166,7 @@ article > header > ul.container > li.category > button > h3 {
   font-size: 20px;
 }
 
-/** END CATEGORIES BAR **/
 
-article.information {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.8s linear;
-}
-
-article.information.show {
-  visibility : visible;
-  opacity : 1;
-  display: block;
-}
 
 article > div.content {
   display: grid;
@@ -192,7 +179,7 @@ article > div.content aside {
 }
 
 article > div.content > article {
-  display: grid;
+  /* display: grid; */
   grid-area: 1 / 2 / 2 / 6;
   gap: 10px;
   padding-left: 3%;
@@ -422,12 +409,28 @@ hr {
 
 @media screen  and (max-width: 640px){
   article > div.content > article {
-    display: none;
-  }
-  article > div.content > article {
     grid-area: 2;
   }
   nav ul > li:nth-child(odd) {
     display: none;
   }
+}
+
+/** END CATEGORIES BAR **/
+
+article > div.content > article.information {
+  display: none;
+  opacity: 0;
+  animation: fade 0.8s ease-in-out;
+}
+
+article > div.content > article.information.show {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
