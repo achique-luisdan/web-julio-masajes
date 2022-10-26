@@ -169,6 +169,7 @@ article > header > ul.container > li.category > button > h3 {
 /** END CATEGORIES BAR **/
 
 article.information {
+  display: none;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.8s linear;
@@ -177,6 +178,7 @@ article.information {
 article.information.show {
   visibility : visible;
   opacity : 1;
+  display: block;
 }
 
 article > div.content {
