@@ -12,11 +12,13 @@ Con mucho gusto puedes consultar una demostración funcional de la [Landing Page
 
 * Muestra de forma dinámica servicios agrupados por categorías: Relajantes, Descontracturantes, Drenajes Linfáticos y Reflexología Podal.
 
-* Diseño adaptativo a dispositivos: ordenadores de escritorio y móviles.
+* Diseño adaptativo a dispositivos tales como ordenadores de escritorio, laptops y móviles.
 
 * Cuenta con iconos representativos de cada categoría de servicios.
 
 * Enlaces a redes sociales: Facebook, WhatsApp, Instagram.
+
+* Paleta de colores acorde a su marca personal.
 
 ## Herramientas (Tools) 🛠️
 
