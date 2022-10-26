@@ -6,7 +6,7 @@ Landing Page de Julio Masajes, presenta sus servicios de masajes separados por c
 
 ## Demostraciones (Demos)  :kiss:
 
-Con mucho gusto puedes explorar una demostración funcional de la [Landing Page diseñada para Julio Masajes](https://achique-luisdan.github.io/web-julio-masajes/)  [¡Visitar!](https://achique-luisdan.github.io/web-julio-masajes/)
+Con mucho gusto puedes consultar una demostración funcional de la [Landing Page diseñada para Julio Masajes](https://achique-luisdan.github.io/web-julio-masajes/)  [¡Visitar!](https://achique-luisdan.github.io/web-julio-masajes/)
 
 ## Características (Features) ❤️
 
