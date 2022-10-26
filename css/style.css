@@ -334,13 +334,6 @@ article > div.content > article  > div.container > div:nth-child(3) > img {
   object-fit: cover;
 }
 
-/* Media Queries */
-
-@media screen  and (max-width: 640px){
-  article > div.content > article {
-    grid-area: 2;
-  }
-}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -421,4 +414,18 @@ hr {
   border-top-left-radius: 5px;
   border-block-start-width: 0px;
   min-height: 1px;
+}
+
+/* END  FOOTER */
+
+/* Media Queries */
+
+@media screen  and (max-width: 640px){
+  article > div.content > article {
+    grid-area: 2;
+  }
+  nav ul {
+    display: flex;
+    flex-direction:column;
+  }
 }
