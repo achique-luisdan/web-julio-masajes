@@ -10,7 +10,7 @@ Con mucho gusto puedes consultar una demostración funcional de la [Landing Page
 
 ## Características (Features) ❤️
 
-* Muestra de forma dinámica servicios agrupados por categorías: Relajantes, Descontracturantes, Drenajes Linfáticos, Reflexología Podal.
+* Muestra de forma dinámica servicios agrupados por categorías: Relajantes, Descontracturantes, Drenajes Linfáticos y Reflexología Podal.
 
 * Diseño adaptativo a dispositivos: ordenadores de escritorio y móviles.
 
