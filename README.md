@@ -1,6 +1,6 @@
 # Web Julio Masajes
 
-<img src="./SCREEN_1.png" alt="Sección de Servicio" height="350px">
+<img src="./SCREEN_1.png" alt="Sección de Servicio">
 
 
 ## Descripción (Description) 📋
