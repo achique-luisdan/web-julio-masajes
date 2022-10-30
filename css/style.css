@@ -415,6 +415,11 @@ hr {
   nav ul > li:nth-child(odd) {
     display: none;
   }
+  section.hero > div.container {
+    height:100vh;
+    max-width: 100%;
+    overflow: hidden;
+  }
 }
 
 /** END CATEGORIES BAR **/
