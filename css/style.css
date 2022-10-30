@@ -17,6 +17,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 /* START NAV */
 
 body > header{
@@ -429,6 +430,92 @@ article > div.content > article.information.show {
   visibility: visible;
   opacity: 1;
 }
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+section.hero > div.container {
+  padding: 3%;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr) repeat(2, 3fr) repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr) repeat(2, 4fr)  repeat(3, 1fr);
+  height: 600px;
+  padding-top: 2%;
+  padding-left:3%;
+  padding-right: 3%;
+  padding-bottom: 1%;
+  grid-auto-flow: dense;
+}
+
+section.hero > div.container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+section.hero > div.container > div.rectangle {
+  background: var(--primary);
+  display: flex;
+  opacity: 0;
+  animation: fade 1s ease-in-out;
+  z-index: 2;
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+section.hero > div.container > div.square {
+  position: absolute;
+  z-index: 3;
+  width: 20%;
+  height: 30%;
+  min-width: 150px;
+  background: var(--white);
+  text-align:center;
+  margin: 2%;
+  padding: 3%;
+}
+
+
+section.hero > div.container > div.square > img  {
+  width: 100%;
+  height: 100%;
+}
+
+section.hero > div.container > div.rectangle.show{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+section.hero > div.container > div.rectangle.primary{
+  background: var(--primary);
+}
+
+section.hero > div.container > div.rectangle.secondary{
+  background: var(--secondary);
+}
+
+section.hero > div.container > div.rectangle.on-surface{
+  background: var(--on-surface);
+}
+
+section.hero > div.container > div.rectangle.transparent{
+  background: transparent;
+}
+
+
 
 @keyframes fade {
   0%   { opacity: 0; }
