@@ -476,15 +476,13 @@ section.hero > div.container > div.rectangle {
   background: var(--primary);
   display: flex;
   opacity: 0;
-  animation: fade 1s ease-in-out;
+  transition: all 0.5s ease-in;
   z-index: 2;
   border: 1px solid white;
-  padding: 20px;
   font-size: 30px;
   text-align: center;
   vertical-align: middle;
 }
-
 
 section.hero > div.container > div.square {
   position: absolute;
@@ -527,8 +525,3 @@ section.hero > div.container > div.rectangle.transparent{
 }
 
 
-
-@keyframes fade {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
