@@ -52,5 +52,4 @@ A continuación se menciona a todos aquellos que ayudaron a levantar el proyecto
 
 De verdad estoy súper contento y agradecido por tu exelente trabajo.
 
-Me quedé impresionado por mi página web. Me encantó.
-Exelente trabajo hermano. Todo perfecto. Súper agradecido contigo. Muy profesional.
+Me quedé impresionado por mi página web. Me encantó. Excelente trabajo hermano. Todo perfecto. Súper agradecido contigo. Muy profesional.
