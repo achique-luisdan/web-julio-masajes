@@ -447,13 +447,16 @@ article > div.content > article.information.show {
   100% { opacity: 1; }
 }
 
+section.hero {
+  height: calc(100vh - 100px);
+}
 section.hero > div.container {
   padding: 3%;
   display: grid;
   position: relative;
   grid-template-columns: repeat(3, 1fr) repeat(2, 3fr) repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr) repeat(2, 4fr)  repeat(3, 1fr);
-  height: 600px;
+  height: 100%;
   padding-top: 2%;
   padding-left:3%;
   padding-right: 3%;
