@@ -1,7 +1,10 @@
 # Web Julio Masajes
 
+
+
 <img src="./SCREEN_1.png" alt="Sección de Servicio">
 
+<img src="./SCREEN_2.png" alt="Sección de Hero">
 
 ## Descripción (Description) 📋
 
