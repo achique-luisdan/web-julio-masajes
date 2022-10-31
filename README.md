@@ -38,3 +38,19 @@ A continuación se menciona a todos aquellos que ayudaron a levantar el proyecto
 * **Luis Achique** - *Desarrollador Web* - [GitHub: @achique-luisdan](https://github.com/achique-luisdan)
 
 ## Reseñas (Reviews) 💞
+<section align="center">
+<div aling="center">
+<a href="https://github.com/mrandyron"><b>Julio Alvarez</b></a>
+
+![Foto de Julio](./julio.png)
+
+<b>Dueño</b>
+
+<b>Julio Masajes</b>
+</div>
+</section>
+
+De verdad estoy súper contento y agradecido por tu exelente trabajo.
+
+Me quedé impresionado por mi página web. Me encantó.
+Exelente trabajo hermano. Todo perfecto. Súper agradecido contigo. Muy profesional.
