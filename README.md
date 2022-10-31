@@ -13,6 +13,8 @@ Con mucho gusto puedes consultar una demostración funcional de la [Landing Page
 
 ## Características (Features) ❤️
 
+*  Sección principal muestra una foto llamativa, con pequeño recuadros animados que cambien de color, brindándole a la web un aire creativo y profesional.
+
 * Muestra de forma dinámica servicios agrupados por categorías: Relajantes, Descontracturantes, Drenajes Linfáticos y Reflexología Podal.
 
 * Diseño adaptativo a dispositivos tales como ordenadores de escritorio, laptops y móviles.
@@ -38,3 +40,16 @@ A continuación se menciona a todos aquellos que ayudaron a levantar el proyecto
 * **Luis Achique** - *Desarrollador Web* - [GitHub: @achique-luisdan](https://github.com/achique-luisdan)
 
 ## Reseñas (Reviews) 💞
+<section align="center">
+<div aling="center">
+<a href="https://julio-masajes.web.app/"><b>Julio Alvarez</b></a>
+
+![Foto de Julio](./julio.png)
+
+<b>Dueño</b>
+
+<b>Julio Masajes</b>
+</div>
+</section>
+
+De verdad estoy súper contento y agradecido por tu exelente trabajo. Me quedé impresionado por mi página web. Me encantó. Excelente trabajo hermano. Todo perfecto. Súper agradecido contigo. Muy profesional.
