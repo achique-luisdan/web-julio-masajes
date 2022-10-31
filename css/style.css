@@ -420,6 +420,12 @@ hr {
     max-width: 100%;
     overflow: hidden;
   }
+  article > header > ul.container > li.category.active-category > button + div.triangle {
+    display: none;
+  }
+  article > div.content aside ul > li.active-service div.triangle{
+    display: none;
+  }
 }
 
 /** END CATEGORIES BAR **/
