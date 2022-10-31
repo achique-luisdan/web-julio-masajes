@@ -40,7 +40,7 @@ A continuación se menciona a todos aquellos que ayudaron a levantar el proyecto
 ## Reseñas (Reviews) 💞
 <section align="center">
 <div aling="center">
-<a href="https://github.com/mrandyron"><b>Julio Alvarez</b></a>
+<a href="https://julio-masajes.web.app/"><b>Julio Alvarez</b></a>
 
 ![Foto de Julio](./julio.png)
 
