@@ -13,6 +13,8 @@ Con mucho gusto puedes consultar una demostración funcional de la [Landing Page
 
 ## Características (Features) ❤️
 
+*  Sección principal muestra una foto llamativa, con pequeño recuadros animados que cambien de color, brindándole a la web un aire creativo y profesional.
+
 * Muestra de forma dinámica servicios agrupados por categorías: Relajantes, Descontracturantes, Drenajes Linfáticos y Reflexología Podal.
 
 * Diseño adaptativo a dispositivos tales como ordenadores de escritorio, laptops y móviles.
